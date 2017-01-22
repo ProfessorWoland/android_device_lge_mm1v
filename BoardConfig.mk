@@ -30,7 +30,8 @@ MTK_INTERNAL_CDEFS += $(foreach t,$(AUTO_ADD_GLOBAL_DEFINE_BY_NAME_VALUE),$(if $
 COMMON_GLOBAL_CFLAGS += $(MTK_INTERNAL_CDEFS)
 COMMON_GLOBAL_CPPFLAGS += $(MTK_INTERNAL_CDEFS)
 
-TARGET_KERNEL_CONFIG := cyanogenmod_porridge_defconfig
+#not sure where is this
+#TARGET_KERNEL_CONFIG := cyanogenmod_porridge_defconfig
 
 TARGET_BOOTLOADER_BOARD_NAME := MM1V
 
