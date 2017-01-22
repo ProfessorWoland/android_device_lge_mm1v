@@ -30,15 +30,15 @@ MTK_INTERNAL_CDEFS += $(foreach t,$(AUTO_ADD_GLOBAL_DEFINE_BY_NAME_VALUE),$(if $
 COMMON_GLOBAL_CFLAGS += $(MTK_INTERNAL_CDEFS)
 COMMON_GLOBAL_CPPFLAGS += $(MTK_INTERNAL_CDEFS)
 
-#not sure where is this
-#TARGET_KERNEL_CONFIG := cyanogenmod_porridge_defconfig
+#not sure where is this, maybe need to be located created or something
+TARGET_KERNEL_CONFIG := cyanogenmod_mm1v_defconfig
 
 TARGET_BOOTLOADER_BOARD_NAME := MM1V
 
-#promeniti kad skontam koliko je..
-#BOARD_SYSTEMIMAGE_PARTITION_SIZE:=2558525440
-#BOARD_CACHEIMAGE_PARTITION_SIZE:=419430400
-#BOARD_USERDATAIMAGE_PARTITION_SIZE:=4386701312
+#promeniti kad skontam koliko je.. skontao :D
+BOARD_SYSTEMIMAGE_PARTITION_SIZE:=2879565824
+BOARD_CACHEIMAGE_PARTITION_SIZE:=318767104
+BOARD_USERDATAIMAGE_PARTITION_SIZE:=3807903744
 
 #don't know what is this, it will wait
 #TARGET_INIT_VENDOR_LIB := libinit_porridge
