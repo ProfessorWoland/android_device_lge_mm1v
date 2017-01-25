@@ -18,7 +18,7 @@ $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 
 PRODUCT_NAME := cm_mm1v
-BOARD_VENDOR := wileyfox
+BOARD_VENDOR := lge
 PRODUCT_DEVICE := mm1v
 
 #don't know this not for sure
