@@ -31,7 +31,8 @@ COMMON_GLOBAL_CFLAGS += $(MTK_INTERNAL_CDEFS)
 COMMON_GLOBAL_CPPFLAGS += $(MTK_INTERNAL_CDEFS)
 
 #not sure where is this, maybe need to be located created or something
-TARGET_KERNEL_CONFIG := cyanogenmod_mm1v_defconfig
+#try something like this if it failscyanogenmod_mm1v_defconfig
+TARGET_KERNEL_CONFIG := muse6735_m1v_m_defconfig
 
 TARGET_BOOTLOADER_BOARD_NAME := MM1V
 
