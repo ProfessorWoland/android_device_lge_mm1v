@@ -45,7 +45,7 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE:=3807903744
 #TARGET_INIT_VENDOR_LIB := libinit_porridge
 
 #i don't know where is this on my phone now..
-#TARGET_TAP_TO_WAKE_NODE := /sys/devices/soc/soc:touch/enable_gesture
+TARGET_TAP_TO_WAKE_NODE := /sys/devices/virtual/input/lge_touch/knock_on_type
 
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
