@@ -18,7 +18,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Whether a software navigation bar should be shown. NOTE: in the future this may be
-         autodetected from the Configuration. -->
+         autodetected from the Configuration. turned off double tap to wake idk why -->
     <bool name="config_showNavigationBar">true</bool>
 
     <bool name="config_supportDoubleTapWake">true</bool>
@@ -31,44 +31,18 @@
     <bool name="config_automatic_brightness_available">false</bool>
 
     <integer-array name="config_autoBrightnessLevels">
-        <item>10</item>
         <item>200</item>
-        <item>320</item>
-        <item>450</item>
-        <item>580</item>
-        <item>700</item>
-        <item>850</item>
-        <item>950</item>
-        <item>1500</item>
+        <item>400</item>
+        <item>1000</item>
         <item>3000</item>
-        <item>5000</item>
-        <item>7000</item>
-        <item>9000</item>
-        <item>11000</item>
-        <item>13000</item>
-        <item>15000</item>
-        <item>17000</item>
     </integer-array>
 
     <integer-array name="config_autoBrightnessLcdBacklightValues">
-        <item>1</item>
-        <item>12</item>
-        <item>91</item>
-        <item>103</item>
-        <item>107</item>
-        <item>113</item>
-        <item>120</item>
-        <item>129</item>
-        <item>134</item>
-        <item>152</item>
-        <item>224</item>
-        <item>255</item>
-        <item>255</item>
-        <item>255</item>
-        <item>255</item>
-        <item>255</item>
-        <item>255</item>
-        <item>255</item>
+        <item>35</item>
+        <item>55</item>
+        <item>70</item>
+        <item>70</item>
+        <item>250</item>
     </integer-array>
     
 #change if needed, probably does need
