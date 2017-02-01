@@ -42,7 +42,7 @@ BOARD_CACHEIMAGE_PARTITION_SIZE:=318767104
 BOARD_USERDATAIMAGE_PARTITION_SIZE:=3807903744
 
 #don't know what is this, it will wait
-#TARGET_INIT_VENDOR_LIB := libinit_porridge
+TARGET_INIT_VENDOR_LIB := libinit_mm1v
 
 #i don't know where is this on my phone now..
 TARGET_TAP_TO_WAKE_NODE := /sys/devices/virtual/input/lge_touch/knock_on_type
