@@ -68,11 +68,11 @@ TARGET_SCREEN_WIDTH := 720
 PRODUCT_PACKAGES += \
     YGPS
 
-# Telephony
-SIM_COUNT := 2
-PRODUCT_PROPERTY_OVERRIDES += ro.telephony.sim.count=$(SIM_COUNT)
-PRODUCT_PROPERTY_OVERRIDES += persist.radio.default.sim=0
-PRODUCT_PROPERTY_OVERRIDES += persist.radio.multisim.config=dsds
+# Telephony let the init set tis
+#SIM_COUNT := 2
+#PRODUCT_PROPERTY_OVERRIDES += ro.telephony.sim.count=$(SIM_COUNT)
+#PRODUCT_PROPERTY_OVERRIDES += persist.radio.default.sim=0
+#PRODUCT_PROPERTY_OVERRIDES += persist.radio.multisim.config=dsds
 
 PRODUCT_COPY_FILES += \
 #dont have this    $(LOCAL_PATH)/configs/ecc_list.xml:system/etc/ecc_list.xml
