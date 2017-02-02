@@ -19,9 +19,9 @@ $(call inherit-product-if-exists, $(VENDOR_BLOBS))
 MTK_PROJECT_CONFIG ?= device/lge/mm1v/ProjectConfig.mk
 include $(MTK_PROJECT_CONFIG)
 
-# Charger and USB, probably need a change
+# Charger and USB, probably need a change, i guess it's value from /sys/class/android_usb/android0/idVendor
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    ro.usb.vid=2970
+    ro.usb.vid=1004
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
