@@ -50,3 +50,9 @@ TARGET_TAP_TO_WAKE_NODE := /sys/devices/virtual/input/lge_touch/knock_on_type
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
+
+#TWRP
+RECOVERY_VARIANT := twrp
+TW_THEME := portrait_hdpi
+TW_INCLUDE_CRYPTO := true
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/twrp.fstab
