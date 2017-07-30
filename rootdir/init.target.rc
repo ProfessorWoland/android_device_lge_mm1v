@@ -5,6 +5,10 @@ on boot
     write /sys/kernel/mm/ksm/pages_to_scan 100
     write /sys/kernel/mm/ksm/sleep_millisecs 500
     write /sys/kernel/mm/ksm/run 1
+    
+    # Tap to wake
+    chown system radio /sys/devices/virtual/input/lge_touch/knock_on_type
+    chmod 664 /sys/devices/virtual/input/lge_touch/knock_on_type
 
 on post-fs
     swapon_all /fstab.mm1v
