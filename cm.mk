@@ -12,17 +12,22 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+$(call inherit-product, device/lge/mm1v/full_mm1v.mk)
 
-# Inherit for devices that support 64-bit primary and 32-bit secondary zygote startup script
-#probably don't support? remove in case of bug
-#$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
-# Inherit from porridge
-$(call inherit-product, device/lge/mm1v/device.mk)
 
+PRODUCT_NAME := cm_mm1v
+BOARD_VENDOR := lge
 PRODUCT_DEVICE := mm1v
-PRODUCT_NAME := full_mm1v
+
+#don't know this not for sure
+PRODUCT_GMS_CLIENTID_BASE := android-lge
+
+PRODUCT_MANUFACTURER := LGE
+PRODUCT_MODEL := LG-K350
+
 PRODUCT_BRAND := lge
-PRODUCT_MODEL := MM1V
-PRODUCT_MANUFACTURER := lge
+TARGET_VENDOR := lge
+TARGET_VENDOR_PRODUCT_NAME := K350
+TARGET_VENDOR_DEVICE_NAME := mm1v

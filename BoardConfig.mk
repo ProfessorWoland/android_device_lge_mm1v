@@ -13,6 +13,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+FORCE_32_BIT := true
+
 TARGET_BOARD_PLATFORM := mt6735
 
 DEVICE_PATH := device/lge/mm1v
@@ -51,4 +53,15 @@ TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
+TARGET_TRANSPARENT_COMPRESSION_METHOD := lz4
+
+
+#TWRP this breaks building use only if compiling with minimum twrp repo or omni
+#RECOVERY_VARIANT := twrp
+#TW_USE_TOOLBOX := true
+#TW_THEME := portrait_hdpi
+#TW_SCREEN_BLANK_ON_BOOT := true
+#TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
+#TW_INCLUDE_CRYPTO := true
+#TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/twrp.fstab
 

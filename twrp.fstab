@@ -1,0 +1,32 @@
+# Android fstab file.
+#<src>           <mnt_point>         <type>    <mnt_flags and options>                 <fs_mgr_flags>
+# The filesystem that contains the filesystem checker binary (typically /system) cannot
+# specify MF_CHECK, and must come before any filesystems that do specify MF_CHECK
+
+/system      ext4      /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/system
+/data        ext4      /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/userdata    flags=forceencrypt=/dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/metadata
+/cache       ext4      /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/cache
+#/protect_f   ext4      /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/protect1
+#/protect_s   ext4      /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/protect2
+#/nvdata      ext4      /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/nvdata
+
+#please add cip or persist on project fstab
+#/persist     ext4      /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/persist
+#/custom      ext4      /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/custom
+
+#/persistent  emmc      /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/frp
+
+#/devices/mtk-msdc.0/11240000.msdc1*  auto      vfat      defaults        voldmanaged=sdcard1:auto,encryptable=userdata
+#/devices/platform/mt_usb*            auto      vfat      defaults        voldmanaged=usbotg:auto
+#/dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/nvram         /nvram          emmc  defaults defaults
+#/dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/proinfo       /proinfo        emmc  defaults defaults
+#/dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/lk            /bootloader     emmc  defaults defaults
+#/dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/para          /misc           emmc  defaults defaults
+/boot        emmc      /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/boot
+/recovery    emmc      /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/recovery
+#/dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/logo          /logo           emmc  defaults defaults
+#/dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/expdb         /expdb          emmc  defaults defaults
+#/dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/secro         /secro          emmc  defaults defaults
+#/dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/seccfg        /seccfg         emmc  defaults defaults
+
+/external_sdcard vfat           /dev/block/mmcblk1p1      /dev/block/mmcblk1   flags=display="Micro SDcard";storage;wipeingui;removable
