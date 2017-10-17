@@ -45,7 +45,7 @@
         <item>250</item>
     </integer-array>
     
-#change if needed, probably does need
+    <!-- change if needed, probably does need -->
     <string name="config_useragentprofile_url" translatable="false">http://www.google.com/oha/rdf/ua-profile-kila.xml</string>
 
     <string name="config_mms_user_agent">Android-Mms/0.1</string>
